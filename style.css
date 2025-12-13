@@ -1,0 +1,416 @@
+#Poster {
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    min-height: 100vh;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    height: 450px;
+    overflow: hidden;
+    background-color: #333333;
+}
+
+#Poster::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: opacity 1s ease;
+    opacity: 1;
+    background-image: var(--bg-current);
+    background-color: #333333;
+}
+
+/* Second image layer (for fading effect) */
+#Poster::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: opacity 1s ease;
+    background-image: var(--bg-next);
+    background-color: #333333;
+}
+
+#Poster.fade::after {
+    opacity: 1;
+}
+
+#Poster {
+    opacity: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 10;
+}
+
+
+.hero-content {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.65);
+    z-index: 1;
+}
+
+.cta-button {
+    padding: 30px 60px;
+    border-radius: 5px;
+    background-color: rgb(114, 8, 8);
+    text-decoration: none;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    color: #ffffff;
+}
+
+
+.hero-content {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: white;
+}
+
+
+h1 {
+    
+    font-weight: bold;
+}
+
+.nav-item {
+    color: white;
+}
+
+.fs-4 {
+    font-family: sans-serif;
+    font-weight: 800;
+    color: rgb(114, 8, 8);
+}
+
+.cta-button:hover {
+    background-color: #A52a2a;
+}
+
+.col {
+    height: 300px;
+    width: 300px;
+    margin: 40px;
+    object-fit: contain;
+}
+
+.nav-link{
+    color: rgb(114, 8, 8);
+}
+
+.nav-pills .nav-link.active{
+    color: rgb(255, 255, 255) ;
+    background-color: rgb(114, 8, 8);
+}
+
+.product-img-box {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-img-box img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+/* --- Styling for the Product Cards --- */
+
+.product-card {
+  /* Gives the card a subtle background and padding */
+  background-color: #ffffff; /* Use white background */
+  padding: 30px 20px;
+  border-radius: 12px;
+  
+  /* Creates the subtle lift/shadow effect */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  
+  /* Smooth transition for the hover effect */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+}
+
+.product-card:hover {
+  /* Lifts the card when the user hovers over it */
+  transform: translateY(-3px);
+  /* Makes the shadow more pronounced on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Styling for the Image Box --- */
+
+.product-img-box {
+  /* Ensures the image area is well-spaced */
+  margin-bottom: 20px;
+  /* Optional: Set a max width for visual consistency if images vary greatly */
+  max-width: 250px; 
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Adjustments for the text inside the card */
+
+.product-card h4 {
+  /* Make sure the title stands out */
+  font-weight: 600;
+  color: #333;
+}
+
+.container-py-5 {
+  background-color: #f8f8f8; /* A very light gray to provide contrast */
+  padding-top: 50px; 
+  padding-bottom: 50px;
+}
+
+.Features {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.reason {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+/* --- Footer Styling --- */
+.site-footer {
+    background-color: rgb(114, 8, 8); /* The deep wine color */
+    color: #ffffff; /* White text for contrast */
+    padding: 40px 0 20px 0; /* Top, Bottom, and Side padding */
+    font-family: sans-serif; /* Use a clean, readable font */
+}
+
+/* Container to center content and limit width */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- Three-Column Layout (Flexbox) --- */
+.footer-columns {
+    display: flex; /* Activate Flexbox */
+    justify-content: space-between; /* Distribute columns evenly */
+    gap: 30px; /* Space between columns */
+    margin-bottom: 30px;
+}
+
+.footer-col {
+    flex-basis: 33%; /* Each column takes roughly one-third of the space */
+}
+
+.site-footer h3 {
+    font-size: 1.25em;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.site-footer h4 {
+    font-size: 1.1em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* --- Links Styling --- */
+.site-footer a {
+    color: #ffffff;
+    text-decoration: none; /* Remove the underline */
+    transition: color 0.3s;
+}
+
+.site-footer a:hover {
+    color: #f0f0f0; /* Slightly lighter color on hover */
+}
+
+/* Quick Links List */
+.quick-links ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+    margin: 0;
+}
+
+.quick-links li {
+    margin-bottom: 8px;
+}
+
+/* --- Social Icons Styling --- */
+.social-icons {
+    margin-bottom: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.social-icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #984c55; /* A slightly darker shade of the wine color for the circle */
+    border-radius: 50%; /* Makes the box a circle */
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+/* --- Contact Form Styling --- */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background for input fields */
+    color: white;
+}
+
+.contact-form button {
+    background-color: rgb(114, 8, 8); /* A lighter shade for the button */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+}
+
+/* --- Copyright Bottom Bar --- */
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2); /* A faint separator line */
+    font-size: 0.85em;
+}
+
+.view {
+    text-align: right;
+}
+
+.faint {
+    color: white;
+}
+
+/* --- Contact Form Container --- */
+.contact-form {
+    /* Use this if you are placing this form alone on a page or inside a container */
+    padding: 20px; 
+    max-width: 400px; /* Example width for the form itself */
+    margin: 0 auto; /* Center the form if it's the main element */
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+/* --- Input Fields (Name, Email, Message) --- */
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    background-color: white; /* Ensure white background for fields */
+    /* Adjust width if needed, though flex direction handles this well */
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+/* --- SEND NOW Button --- */
+.send-button {
+    background-color: #8f609e; /* Muted purple color matching the image */
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: background-color 0.3s;
+}
+
+.send-button:hover {
+    background-color: #724c7f; /* Slightly darker purple on hover */
+}
+
+
+/* Fix #1: Set the background directly on the active link */
+.nav-pills .nav-link.active,
+.nav-pills .nav-link.active:hover,
+.nav-pills .nav-link.active:focus {
+    background-color: rgb(114, 8, 8); /* Bootstrap Red for the full button */
+    color: #fff; /* White text on red background */
+    padding-top: 8px; /* Vertical spacing */
+    padding-bottom: 8px;
+    border-radius: 0.25rem; /* Rounded corners */
+    position: static; /* Prevent absolute positioning issues */
+    /* Ensure any border or box-shadow from other rules is overridden if necessary */
+}
+
+/* Fix #2: Ensure no red line appears underneath */
+.nav-pills .nav-link.active::after {
+    display: none;
+}
+
+/* Ensure non-active links are visible */
+.nav-link {
+    color: rgb(114, 8, 8); 
+}
+
+.local {
+    border-radius: 50%;
+}
+
+.shake {
+    border-radius: 50%;
+}
+
+.flag {
+    border-radius: 50%;
+}
+
+.contact-form .sen-button {
+    background-color: #333;
+}
+
+@media screen and (max-width: 768px) {
+    .hide-on-mobile {
+        display: none ! important;
+    }
+}
