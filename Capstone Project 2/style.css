@@ -1,0 +1,77 @@
+.title {
+    display: flex;
+    gap: 10px;
+    background-color: rgb(33, 33, 70);
+    height: 30rem;
+    margin-bottom: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.Intro {
+    display: flex;
+    font-size: 20px;
+    
+    }
+
+h1 {
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+
+.profile {
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+}
+
+.about {
+    text-align: center;
+}
+
+.Hello {
+    margin-bottom: 200px;
+
+}
+
+.Skills {
+    margin-bottom: 200px;
+}
+
+.box-1 {
+    position: absolute;
+    right: 300px;
+    top: 40px;
+}
+
+.box-2 {
+    position: absolute;
+    right: 50px;
+    top: 200px;
+}
+
+.box-3 {
+    position: absolute;
+    right: 1100px;
+    top: 50px;
+}
+
+.box-4 {
+    position: absolute;
+    right: 1200px;
+    top: 250px;
+}
+
+.box-5 {
+    position: absolute;
+    right: 900px;
+    top: 380px;
+}
+
+.box-6 {
+    position: absolute;
+    right: 350px;
+    top: 350px;
+}

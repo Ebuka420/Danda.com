@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+     <!-- Title -->
+   <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"> <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"> 
+    <svg class="bi me-2" width="40" height="32" aria-hidden="true"><use xlink:href="#bootstrap"></use></svg> 
+    <span class="fs-4">Danda Farms LTD.</span> </a> <ul class="nav nav-pills"> 
+    <li class="nav-item"><a href="./index.html" class="nav-link">Home</a></li> 
+    <li class="nav-item"><a href="./Products.html" class="nav-link">All Products</a></li> 
+    <li class="nav-item"><a href="./Poultry.html" class="nav-link">Poultry</a></li> 
+    <li class="nav-item"><a href="./Seafood.html" class="nav-link">Seafood</a></li> 
+    <li class="nav-item"><a href="./About.html" class="nav-link">About</a></li>
+    <li class="nav-item"><a href="./Contact.html" class="nav-link">Contact Us</a></li> </ul>  
+</header>
+
+<script>
+    const currentPath = window.location.pathname;
+    const navLinks = document.querySelectorAll('.nav-pills a.nav-link');
+
+    navLinks.forEach(link => {
+        const linkHref = link.getAttribute('href');
+
+        // Check if the current URL path ends with the link's href (e.g., /Seafood.html)
+        if (currentPath.endsWith(linkHref.replace('./', '')) || 
+            (currentPath.endsWith('/') && linkHref === './index.html')) {
+
+            // Apply 'active' to both the <a> and <li> elements to ensure Bootstrap styling works
+            link.classList.add('active');
+            link.parentElement.classList.add('active');
+            link.parentElement.setAttribute('aria-current', 'page');
+        }
+    });
+</script>
+</body>
+
+<!-- MAIN CONTAINER FOR SPACING -->
+<div class="container py-5">
+<h1 class="Features">Poultry</h1>
+  <!-- ROW: Controls how the columns line up -->
+  <div class="row row-cols-1 row-cols-md-3 g-5 text-center align-items-end">
+
+    <!-- 1️⃣ ITEM 1 -->
+    <div class="col-12 col-sm-6 col-md-4 mx-auto">
+      <div class="product-card">
+        <div class="product-img-box">
+      <img src="./resources/whole chicken.webp" class="img-fluid rounded" alt="Whole Chicken" height="250px" width="250px">
+      </div>
+      <h4 class="mt-3">Whole Chicken</h4>
+      <p class="text-muted">5000 per kg.</p>
+      </div>
+    </div>
+
+    <!-- 2️⃣ ITEM 2 -->
+    <div class="col-12 col-sm-6 col-md-4 mx-auto">
+      <div class="product-card">
+      <div class="product-img-box">
+      <img src="./resources/mixed portion.jpg" class="img-fluid rounded" alt="Mixed Portion" height="250px" width="250px">
+      </div>
+      <h4 class="mt-3">Mixed Portion</h4>
+      <p class="text-muted">5000 per kg.</p>
+      </div>
+    </div>
+
+    <!-- 3️⃣ ITEM 3 -->
+    <div class="col-12 col-sm-6 col-md-4 mx-auto">
+      <div class="product-card">
+      <div class="product-img-box">
+      <img src="./resources/drumsticks.jpg" class="img-fluid rounded" alt="Chicken laps" height="250px" width="250px">
+      </div>
+      <h4 class="mt-3">Chicken laps</h4>
+      <p class="text-muted">5000 per kg.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- MAIN CONTAINER FOR SPACING -->
+<div class="container py-5">
+  <!-- ROW: Controls how the columns line up -->
+  <div class="row row-cols-1 row-cols-md-3 g-5 text-center align-items-end">
+
+    <!-- 1️⃣ ITEM 1 -->
+    <div class="col-12 col-sm-6 col-md-4 mx-auto">
+      <div class="product-card">
+        <div class="product-img-box">
+      <img src="./resources/head.jpg" class="img-fluid rounded" alt="Chicken Head" height="250px" width="250px">
+      </div>
+      <h4 class="mt-3">Chicken Head</h4>
+      <p class="text-muted">1800 per kg.</p>
+      </div>
+    </div>
+
+    <!-- 2️⃣ ITEM 2 -->
+    <div class="col-12 col-sm-6 col-md-4 mx-auto">
+      <div class="product-card">
+      <div class="product-img-box">
+      <img src="./resources/feet.png" class="img-fluid rounded" alt="Chicken feet" height="250px" width="250px">
+      </div>
+      <h4 class="mt-3">Chicken feet</h4>
+      <p class="text-muted">2000 per kg.</p>
+      </div>
+    </div>
+
+    <!-- 3️⃣ ITEM 3 -->
+    <div class="col-12 col-sm-6 col-md-4 mx-auto">
+      <div class="product-card">
+      <div class="product-img-box">
+      <img src="./resources/cgizzard.jpg" class="img-fluid rounded" alt="Sausages" height="250px" width="250px">
+      </div>
+      <h4 class="mt-3">Chicken Gizzard</h4>
+      <p class="text-muted">2000 per kg.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+ 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-columns">
+            <div class="footer-col contact-info">
+                <h3>Contact Us</h3>
+                <p><strong>Head Office:</strong><br>Cormart House, Plot A Block 2,<br>Ilupeju Industrial Estate, Apapa,<br>Lagos, Nigeria</p>
+                <p><strong>Email:</strong> ezenwalegal@yahoo.com</p>
+
+                <h4>Service Hours</h4>
+                <p>Mon:   8:00 AM - 9:00 PM</p>
+                <p>Tue:   8:00 AM - 9:00 PM</p>
+                <p>Wed:   8:00 AM - 9:00 PM</p>
+                <p>Thur:  10:00 AM - 9:00 PM</p>
+                <p>Fri:   8:00 AM - 9:00 PM</p>
+                <p>Sat:   8:00 AM - 9:00 PM</p>
+                <p>Sun:   9:00 AM - 3:00 PM</p>
+            </div>
+
+            <div class="footer-col quick-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="./About.html">About Us</a></li>
+                    <li><a href="./Products.html">Our Products</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+
+                <h4>Send Us a Message</h4>
+                <form action="#" method="POST" class="contact-form">
+                    <input type="text" name="name" placeholder="Name" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <textarea name="message" placeholder="Message"></textarea>
+                    <button type="submit" class="sen-button">SEND</button>
+                </form>
+            </div>
+
+            <div class="footer-col follow-us">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-icon facebook">f</a>
+                    <a href="#" class="social-icon twitter">t</a>
+                    <a href="#" class="social-icon instagram">in</a>
+                </div>
+                <p>My Company is leading supplier of quality goods, committed to serving our customers across Nigeria with reliability and excellence.</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>Copyright &copy;2024 My Company. All rights Reserved. Designed by My Web Studio</p>
+        </div>
+    </div>
+</footer>
+</html>
