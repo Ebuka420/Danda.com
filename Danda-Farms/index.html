@@ -1,214 +1,714 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="./style.css">
+
+<title>Global Danda | Poultry, seafood and frozen foods</title>
+<meta name="description" content="Quality poultry, seafood and food products for homes and businesses. Discover Danda Farms, proudly serving Nigeria from Ikorodu, Lagos.">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+    crossorigin="anonymous">
+
+<link rel="stylesheet" href="./style.css">
+
+
+<script src="./products.js" defer></script>
+<script src="./shop.js" defer></script>
 </head>
+
 <body>
-    <!-- Title -->
-   <header>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light w-100">
 
-    <div class="container-fluid">
-    
-    <a class="navbar-brand me-auto" href="#">Danda Farms LTD.</a>
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+<!-- ================= NAVIGATION ================= -->
 
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-      
-      <ul class="navbar-nav nav-pills">
-        <li class="nav-item me-3">
-          <a class="nav-link" aria-current="page" href="./index.html">Home</a>
-        </li>
-        <li class="nav-item me-3">
-          <a class="nav-link" href="./Products.html">All Products</a>
-        </li>
-        <li class="nav-item me-3">
-          <a class="nav-link" href="./Poultry.html">Poultry</a>
-        </li>
-        <li class="nav-item me-3">
-          <a class="nav-link" href="./Seafood.html">Seafood</a>
-        </li>
-        <li class="nav-item me-3">
-          <a class="nav-link" href="./About.html">About</a>
-        </li>
-        <li class="nav-item me-3">
-          <a class="nav-link" href="./Contact.html">Contact Us</a>
-        </li>
-      </ul>
-      
-    </div>
-    </div>
-  </nav>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light w-100">
+
+        <div class="container-fluid px-lg-5">
+
+            <a class="navbar-brand me-auto" href="./index.html">
+                Danda Farms LTD.
+            </a>
+
+            <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+
+                <ul class="navbar-nav nav-pills align-items-lg-center">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Products.html">All Products</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Poultry.html">Poultry</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Seafood.html">Seafood</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./About.html">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link contact-nav-link" href="./Contact.html">
+                            Contact Us
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
 </header>
 
+
+<!-- ================= HERO SECTION ================= -->
+
+<section id="Poster">
+
+    <div class="hero-overlay">
+
+        <div class="container">
+
+            <div class="hero-content">
+
+                <p class="hero-tagline">
+                    QUALITY YOU CAN TRUST
+                </p>
+
+                <h1>
+                    Farm fresh quality.<br>
+                    Delivered daily.
+                </h1>
+
+                <p class="hero-description">
+                    Quality food products carefully sourced and delivered
+                    with reliability, freshness and excellence.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="./Products.html" class="cta-button">
+                        Explore Products
+                    </a>
+
+                    <a href="./Contact.html" class="secondary-button">
+                        Contact Us
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= INTRO / TRUST SECTION ================= -->
+
+<section class="brand-intro">
+
+    <div class="container">
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-7">
+
+                <p class="section-label">
+                    ABOUT DANDA FARMS
+                </p>
+
+                <h2>
+                    Quality food products for homes and businesses.
+                </h2>
+
+                <p>
+                    Danda Farms is committed to providing quality products
+                    that Nigerians can trust. From sourcing to delivery,
+                    we focus on reliability, quality and excellent service.
+                </p>
+
+            </div>
+
+            <div class="col-lg-5">
+
+                <div class="intro-stats">
+
+                    <div class="stat-item">
+                        <strong>Quality</strong>
+                        <span>Products you can trust</span>
+                    </div>
+
+                    <div class="stat-item">
+                        <strong>Reliable</strong>
+                        <span>Consistent service</span>
+                    </div>
+
+                    <div class="stat-item">
+                        <strong>Nigerian</strong>
+                        <span>Proudly serving Nigeria</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PRODUCTS ================= -->
+
+<section class="products-section">
+
+    <div class="container py-5">
+
+        <div class="section-heading text-center">
+
+            <p class="section-label">
+                WHAT WE OFFER
+            </p>
+
+            <h2 class="Features">
+                Our Products
+            </h2>
+
+            <p class="section-description">
+                Explore some of our quality food products.
+            </p>
+
+        </div>
+
+
+        <div class="row row-cols-1 row-cols-md-3 g-4 g-lg-5 mt-2">
+
+
+            <!-- WHOLE CHICKEN -->
+
+            <div class="col">
+
+                <div class="product-card h-100">
+
+                    <div class="product-img-box">
+
+                        <a href="./Products.html">
+
+                            <img src="./resources/whole chicken.webp"
+                                class="img-fluid"
+                                alt="Whole Frozen Chicken">
+
+                        </a>
+
+                    </div>
+
+                    <div class="product-content">
+
+                        <h4>
+                            Whole Chicken
+                        </h4>
+
+                        <p>
+                            Freshly packed frozen chicken, carefully prepared
+                            for quality and convenience.
+                        </p>
+
+                        <a href="./Products.html" class="product-link">
+                            View Product <span aria-hidden="true">&rarr;</span>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- TITUS FISH -->
+
+            <div class="col">
+
+                <div class="product-card h-100">
+
+                    <div class="product-img-box">
+
+                        <a href="./Products.html">
+
+                            <img src="./resources/Titus.png"
+                                class="img-fluid"
+                                alt="Titus Frozen Fish">
+
+                        </a>
+
+                    </div>
+
+                    <div class="product-content">
+
+                        <h4>
+                            Titus Fish
+                        </h4>
+
+                        <p>
+                            Premium quality frozen fish, properly preserved
+                            to maintain freshness and quality.
+                        </p>
+
+                        <a href="./Products.html" class="product-link">
+                            View Product <span aria-hidden="true">&rarr;</span>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- SAUSAGES -->
+
+            <div class="col">
+
+                <div class="product-card h-100">
+
+                    <div class="product-img-box">
+
+                        <a href="./Products.html">
+
+                            <img src="./resources/sausages.jpg"
+                                class="img-fluid"
+                                alt="Danda Sausages">
+
+                        </a>
+
+                    </div>
+
+                    <div class="product-content">
+
+                        <h4>
+                            Sausages
+                        </h4>
+
+                        <p>
+                            Tasty and convenient sausages, ready to become
+                            part of your favourite meals.
+                        </p>
+
+                        <a href="./Products.html" class="product-link">
+                            View Product <span aria-hidden="true">&rarr;</span>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="text-center mt-5">
+
+            <a href="./Products.html" class="view-all-button">
+                View All Products
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= WHY CHOOSE US ================= -->
+
+<section class="why-section">
+
+    <div class="container py-5">
+
+        <div class="section-heading text-center mb-5">
+
+            <p class="section-label">
+                WHY DANDA
+            </p>
+
+            <h2>
+                Why Choose Us?
+            </h2>
+
+            <p class="section-description">
+                Our commitment goes beyond simply supplying products.
+            </p>
+
+        </div>
+
+
+        <div class="row g-4 g-lg-5">
+
+
+            <!-- LOCAL SOURCING -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="why-card text-center h-100">
+
+                    <div class="why-image">
+
+                        <img src="./resources/danda n2.jpg"
+                            class="local"
+                            alt="Local sourcing">
+
+                    </div>
+
+                    <h3>
+                        Local Sourcing
+                    </h3>
+
+                    <p>
+                        We are the grower, the producer and the seller.
+                        This gives us greater control over the journey
+                        from production to our customers.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- QUALITY CONTROL -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="why-card text-center h-100">
+
+                    <div class="why-image">
+
+                        <img src="./resources/flag.jpg"
+                            class="flag"
+                            alt="Proudly Nigerian">
+
+                    </div>
+
+                    <h3>
+                        Total Quality Control
+                    </h3>
+
+                    <p>
+                        Our products are proudly Nigerian made and we are
+                        committed to maintaining quality at every stage.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- FRIENDLY SERVICE -->
+
+            <div class="col-lg-4 col-md-12">
+
+                <div class="why-card text-center h-100">
+
+                    <div class="why-image">
+
+                        <img src="./resources/shake.png"
+                            class="shake"
+                            alt="Friendly customer service">
+
+                    </div>
+
+                    <h3>
+                        Friendly Service
+                    </h3>
+
+                    <p>
+                        Experience genuine and helpful customer service.
+                        We are always ready to answer your questions
+                        and assist you.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CALL TO ACTION ================= -->
+
+<section class="business-cta">
+
+    <div class="container">
+
+        <div class="business-cta-content">
+
+            <div>
+
+                <p class="section-label">
+                    QUALITY YOU CAN RELY ON
+                </p>
+
+                <h2>
+                    Looking for reliable food products?
+                </h2>
+
+                <p>
+                    Explore our range of quality products and get in touch
+                    with our team today.
+                </p>
+
+            </div>
+
+            <div class="business-cta-buttons">
+
+                <a href="./Products.html" class="cta-button">
+                    Explore Products
+                </a>
+
+                <a href="./Contact.html" class="secondary-button light-button">
+                    Get In Touch
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="site-footer">
+
+    <div class="container">
+
+        <div class="footer-columns">
+
+
+            <!-- CONTACT -->
+
+            <div class="footer-col contact-info">
+
+                <h3>
+                    Contact Us
+                </h3>
+
+                <p>
+                    <strong>Head Office:</strong><br>
+                    Ikorodu Industrial Scheme,
+                    Ikorodu, Lagos, Nigeria.
+                </p>
+
+                <p>
+                    <strong>Email:</strong><br>
+                    globaldanda@gmail.com
+                </p>
+
+
+                <h4>
+                    Service Hours
+                </h4>
+
+                <p>
+                    Mon - Sat: 8:00 AM - 9:00 PM
+                </p>
+
+                <p>
+                    Sun: 9:00 AM - 3:00 PM
+                </p>
+
+            </div>
+
+
+            <!-- QUICK LINKS -->
+
+            <div class="footer-col quick-links">
+
+                <h3>
+                    Quick Links
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a href="./index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="./About.html">About Us</a>
+                    </li>
+
+                    <li>
+                        <a href="./Products.html">Our Products</a>
+                    </li>
+
+                    <li>
+                        <a href="./Contact.html">Contact Us</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- MESSAGE FORM -->
+
+            <div class="footer-col footer-box">
+
+                <h3>
+                    Send Us a Message
+                </h3>
+
+                <form action="#" method="POST" class="contact-form">
+
+                    <input aria-label="Your name" autocomplete="name" type="text"
+                        name="name"
+                        placeholder="Your Name"
+                        required>
+
+                    <input aria-label="Your email" autocomplete="email" type="email"
+                        name="email"
+                        placeholder="Your Email"
+                        required>
+
+                    <textarea aria-label="Your message" name="message"
+                        placeholder="Your Message"
+                        rows="4"></textarea>
+
+                    <button type="submit" class="sen-button">
+                        SEND MESSAGE
+                    </button>
+
+                </form>
+
+            </div>
+
+
+            <!-- BRAND -->
+
+            <div class="footer-col follow-us">
+
+                <h3>
+                    Danda Farms
+                </h3>
+
+                <p>
+                    Danda is a leading supplier of quality food products,
+                    committed to serving customers across Nigeria with
+                    reliability and excellence.
+                </p>
+
+                <h4>
+                    Follow Us
+                </h4>
+
+                <div class="social-icons">
+
+                    <a href="#" class="social-icon facebook"
+                        aria-label="Facebook">
+                        f
+                    </a>
+
+                    <a href="#" class="social-icon twitter"
+                        aria-label="Twitter">
+                        t
+                    </a>
+
+                    <a href="#" class="social-icon instagram"
+                        aria-label="Instagram">
+                        in
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                Copyright &copy; 2026 Global Danda.
+                All Rights Reserved.
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- ================= SCRIPTS ================= -->
+
 <script>
+
     const currentPath = window.location.pathname;
     const navLinks = document.querySelectorAll('.nav-pills a.nav-link');
 
     navLinks.forEach(link => {
-        const linkHref = link.getAttribute('href');
 
-        // Check if the current URL path ends with the link's href (e.g., /Seafood.html)
-        if (currentPath.endsWith(linkHref.replace('./', '')) || 
-            (currentPath.endsWith('/') && linkHref === './index.html')) {
+        const linkHref = link.getAttribute('href')
+            .replace('./', '');
 
-            // Apply 'active' to both the <a> and <li> elements to ensure Bootstrap styling works
+        if (
+            currentPath.endsWith(linkHref) ||
+            (currentPath.endsWith('/') && linkHref === 'index.html')
+        ) {
+
             link.classList.add('active');
-            link.parentElement.classList.add('active');
-            link.parentElement.setAttribute('aria-current', 'page');
+
         }
+
     });
+
 </script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous">
+</script>
+
+<script src="./script.js"></script>
+
+
 </body>
 
-
-    <div id="Poster">
-     <div class="hero-content">
-        <h1>FARM FRESH QUALITY<br>DELIVERED DAILY</h1>
-        <a href="shop.html" class="cta-button">Shop Now</a>
-     </div>
-   </div>  
-
-   
-
-   <!-- MAIN CONTAINER FOR SPACING -->
-<div class="container py-5">
-<h1 class="Features">Our Products</h1>
-  <!-- ROW: Controls how the columns line up -->
-  <div class="row row-cols-1 row-cols-md-3 g-5 text-center align-items-end">
-
-    <!-- 1️⃣ ITEM 1 -->
-    <div class="col-12 col-sm-6 col-md-4 mx-auto">
-      <div class="product-card">
-        <div class="product-img-box">
-      <a href="./Products.html"><img src="./resources/whole chicken.webp" class="img-fluid rounded" alt="Frozen Chicken" height="250px" width="250px"></a>
-      </div>
-      <h4 class="mt-3">Whole Chicken</h4>
-      <p class="text-muted">Freshly packed frozen chicken.</p>
-      </div><br>
-      <p class="faint">more</p>
-    </div>
-
-    <!-- 2️⃣ ITEM 2 -->
-    <div class="col-12 col-sm-6 col-md-4 mx-auto">
-      <div class="product-card">
-      <div class="product-img-box">
-      <a href="./Products.html"><img src="./resources/Titus.png" class="img-fluid rounded" alt="Frozen Fish" height="250px" width="250px"></a>
-      </div>
-      <h4 class="mt-3">Titus Fish</h4>
-      <p class="text-muted">Premium quality frozen fish.</p>
-      </div><br>
-      <p class="faint">more</p>
-    </div>
-
-    <!-- 3️⃣ ITEM 3 -->
-    <div class="col-12 col-sm-6 col-md-4 mx-auto">
-      <div class="product-card">
-      <div class="product-img-box">
-      <a href="./Products.html"><img src="./resources/sausages.jpg" class="img-fluid rounded" alt="Sausages" height="250px" width="250px"></a>
-      </div>
-      <h4 class="mt-3">Sausages</h4>
-      <p class="text-muted">Tasty and ready for cooking.</p>
-      </div><br>
-      <a href="./Products.html"><p class="view">more</p></a>
-    </div>
-
-  </div>
-</div>
-
-<div class="container">
-    <h1 class="text-center mb-5">Why Choose Us?</h1>
-
-    <div class="row row-cols-1 row-cols-md-3 g-5 text-center align-items-end pb-5">
-  <div class="col-lg-4 col-md-4 text-center"> 
-    <h3>Local Sourcing</h3>
-    <p>We are the grower, the producer and the seller. We control every...</p>
-    <img src="./resources/local.jpg" class="local">
-  </div>
-  
-  <div class="col-lg-4 col-md-4 text-center">
-    <h3>Total Quality Control</h3>
-    <p>Products are proudly Nigerian made and are free from additives.</p>
-    <img src="./resources/flag.jpg" class="flag" height="170" width="170">
-</div>
-  
-  <div class="col-lg-4 col-md-4 text-center">
-    <h3>Friendly Service</h3>
-    <p>Experience genuine, helpful customer service. We are here to answer your...</p>
-    <img src="./resources/shake.png" class="shake" height="170px" weight="170px">
-</div>
-</div>
-        
-    </div>
-    </div>
-<br>
-<br>
-<br>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-<script src="script.js"></script>
-</body>
-
-<footer class="site-footer">
-    <div class="container">
-        <div class="footer-columns">
-            <div class="footer-col contact-info">
-                <h3>Contact Us</h3>
-                <p><strong>Head Office:</strong><br>Cormart House, Plot A Block 2,<br>Ilupeju Industrial Estate, Apapa,<br>Lagos, Nigeria</p>
-                <p><strong>Email:</strong> ezenwalegal@yahoo.com</p>
-
-                <h4>Service Hours</h4>
-                <p>Mon:   8:00 AM - 9:00 PM</p>
-                <p>Tue:   8:00 AM - 9:00 PM</p>
-                <p>Wed:   8:00 AM - 9:00 PM</p>
-                <p>Thur:  10:00 AM - 9:00 PM</p>
-                <p>Fri:   8:00 AM - 9:00 PM</p>
-                <p>Sat:   8:00 AM - 9:00 PM</p>
-                <p>Sun:   9:00 AM - 3:00 PM</p>
-            </div>
-
-            <div class="footer-col quick-links">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="./About.html">About Us</a></li>
-                    <li><a href="./Products.html">Our Products</a></li>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">FAQs</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-
-                <h4 class="hide-on-mobile">Send Us a Message</h4>
-                <form action="#" method="POST" class="contact-form hide-on-mobile">
-                    <input type="text" name="name" placeholder="Name" required>
-                    <input type="email" name="email" placeholder="Email" required>
-                    <textarea name="message" placeholder="Message"></textarea>
-                    <button type="submit" class="sen-button">SEND</button>
-                </form>
-            </div>
-
-            <div class="footer-col follow-us">
-                <h3>Follow Us</h3>
-                <div class="social-icons">
-                    <a href="#" class="social-icon facebook">f</a>
-                    <a href="#" class="social-icon twitter">t</a>
-                    <a href="#" class="social-icon instagram">in</a>
-                </div>
-                <p>Danda is a leading supplier of quality goods, committed to serving our customers across Nigeria with reliability and excellence.</p>
-            </div>
-        </div>
-        
-        <div class="footer-bottom">
-            <p>Copyright &copy;2024 Global Danda . All rights Reserved.</p>
-        </div>
-    </div>
-</footer>
 </html>

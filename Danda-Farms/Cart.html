@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your cart | Danda Farms</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light w-100">
+
+        <div class="container-fluid px-lg-5">
+
+            <a class="navbar-brand me-auto" href="./index.html">
+                Danda Farms LTD.
+            </a>
+
+            <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+
+                <ul class="navbar-nav nav-pills align-items-lg-center">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Products.html">All Products</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Poultry.html">Poultry</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Seafood.html">Seafood</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./About.html">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link contact-nav-link" href="./Contact.html">
+                            Contact Us
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+</header>
+
+<main class="container cart-page">
+  <p class="section-label">YOUR ORDER</p>
+  <h1 id="cart-heading" tabindex="-1">Your cart</h1>
+  <p class="section-description">Review your items and quantities before contacting our team.</p>
+  <noscript>Please enable JavaScript to manage your cart.</noscript>
+  <div id="cart-empty" hidden class="empty-cart"><h2>Your cart is empty.</h2><p>Explore our poultry, seafood and other products to start your order.</p><a class="cta-button" href="./Products.html">Explore products</a></div>
+  <div class="cart-layout">
+    <div id="cart-items"></div>
+    <aside id="order-summary" hidden class="order-summary"><h2>Order summary</h2><div class="subtotal"><span id="subtotal-label">Items subtotal</span><strong id="cart-subtotal"></strong></div><p id="price-note"></p><a class="cta-button" href="#checkout-section">Continue to checkout</a><a class="continue-shopping" href="./Products.html">Continue shopping &rarr;</a></aside>
+  </div>
+  <section id="checkout-section" hidden class="checkout-section">
+    <p class="section-label">CHECKOUT</p><h2>Your contact &amp; delivery details</h2>
+    <p>Prepare an order enquiry for our team. We will confirm availability, prices and delivery arrangements before payment.</p>
+    <form id="checkout-form" class="checkout-form">
+      <div><label for="customer-name">Full name</label><input id="customer-name" name="name" autocomplete="name" maxlength="100" required></div>
+      <div><label for="customer-email">Email address</label><input id="customer-email" name="email" type="email" autocomplete="email" maxlength="150" required></div>
+      <div><label for="customer-phone">Phone number</label><input id="customer-phone" name="phone" type="tel" autocomplete="tel" minlength="7" maxlength="25" required></div>
+      <div><label for="fulfilment">How would you like your order?</label><select id="fulfilment" name="fulfilment"><option value="delivery">Delivery</option><option value="pickup">Pickup at Ikorodu office</option></select></div>
+      <div class="form-wide"><label for="address">Delivery address</label><textarea id="address" name="address" autocomplete="street-address" rows="3" maxlength="500" required></textarea><small>For pickup, you may leave this blank. Our office is at Ikorodu Industrial Scheme, Ikorodu, Lagos.</small></div>
+      <div class="form-wide"><label for="order-notes">Order notes (optional)</label><textarea id="order-notes" name="notes" rows="2" maxlength="500"></textarea></div>
+      <div class="form-wide"><button class="cta-button" type="submit">Review order enquiry</button></div>
+    </form>
+    <section id="order-draft" hidden tabindex="-1" class="order-draft"><h2>Your order draft is ready</h2><p>Open your email app, review the draft and send it to <a href="mailto:globaldanda@gmail.com">globaldanda@gmail.com</a>. Preparing this draft does not submit an order.</p><pre id="order-text"></pre><div class="draft-actions"><a id="email-order" class="cta-button">Open email draft</a><button id="download-order" type="button" class="download-order">Download order</button></div><p class="email-help">If no email app opens, download the order and attach it to an email. Your cart stays saved while you wait for confirmation.</p></section>
+  </section>
+</main>
+
+<footer class="site-footer">
+
+    <div class="container">
+
+        <div class="footer-columns">
+
+
+            <!-- CONTACT -->
+
+            <div class="footer-col contact-info">
+
+                <h3>
+                    Contact Us
+                </h3>
+
+                <p>
+                    <strong>Head Office:</strong><br>
+                    Ikorodu Industrial Scheme,
+                    Ikorodu, Lagos, Nigeria.
+                </p>
+
+                <p>
+                    <strong>Email:</strong><br>
+                    globaldanda@gmail.com
+                </p>
+
+
+                <h4>
+                    Service Hours
+                </h4>
+
+                <p>
+                    Mon - Sat: 8:00 AM - 9:00 PM
+                </p>
+
+                <p>
+                    Sun: 9:00 AM - 3:00 PM
+                </p>
+
+            </div>
+
+
+            <!-- QUICK LINKS -->
+
+            <div class="footer-col quick-links">
+
+                <h3>
+                    Quick Links
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a href="./index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="./About.html">About Us</a>
+                    </li>
+
+                    <li>
+                        <a href="./Products.html">Our Products</a>
+                    </li>
+
+                    <li>
+                        <a href="./Contact.html">Contact Us</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- MESSAGE FORM -->
+
+            <div class="footer-col footer-box">
+
+                <h3>
+                    Send Us a Message
+                </h3>
+
+                <form action="#" method="POST" class="contact-form">
+
+                    <input aria-label="Your name" autocomplete="name" type="text"
+                        name="name"
+                        placeholder="Your Name"
+                        required>
+
+                    <input aria-label="Your email" autocomplete="email" type="email"
+                        name="email"
+                        placeholder="Your Email"
+                        required>
+
+                    <textarea aria-label="Your message" name="message"
+                        placeholder="Your Message"
+                        rows="4"></textarea>
+
+                    <button type="submit" class="sen-button">
+                        SEND MESSAGE
+                    </button>
+
+                </form>
+
+            </div>
+
+
+            <!-- BRAND -->
+
+            <div class="footer-col follow-us">
+
+                <h3>
+                    Danda Farms
+                </h3>
+
+                <p>
+                    Danda is a leading supplier of quality food products,
+                    committed to serving customers across Nigeria with
+                    reliability and excellence.
+                </p>
+
+                <h4>
+                    Follow Us
+                </h4>
+
+                <div class="social-icons">
+
+                    <a href="#" class="social-icon facebook"
+                        aria-label="Facebook">
+                        f
+                    </a>
+
+                    <a href="#" class="social-icon twitter"
+                        aria-label="Twitter">
+                        t
+                    </a>
+
+                    <a href="#" class="social-icon instagram"
+                        aria-label="Instagram">
+                        in
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                Copyright &copy; 2026 Global Danda.
+                All Rights Reserved.
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script src="./products.js"></script><script src="./shop.js"></script>
+<script src="./script.js"></script>
+</body>
+</html>
