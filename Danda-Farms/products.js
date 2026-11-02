@@ -6,13 +6,15 @@ window.DANDA_PRODUCTS = [
   { id: 'chicken-head', name: 'Chicken Head', price: 1500, unit: 'kg', image: 'resources/head.jpg' },
   { id: 'chicken-feet', name: 'Chicken feet', price: 2500, unit: 'kg', image: 'resources/feet.png' },
   { id: 'chicken-gizzard', name: 'Chicken Gizzard', price: 6000, unit: 'kg', image: 'resources/cgizzard.jpg' },
-  { id: 'titus', name: 'Titus Fish', price: null, unit: 'kg', image: 'resources/Titus.png' },
+  { id: 'titus', name: 'Titus Fish', price: 13000, unit: 'kg', image: 'resources/Titus.png' },
   { id: 'panla', name: 'Panla Fish', price: null, unit: 'kg', image: 'resources/Panla.webp' },
   { id: 'croaker', name: 'Croaker Fish', price: null, unit: 'kg', image: 'resources/croaker.jpg' },
   { id: 'shrimp', name: 'Shrimp', price: null, unit: 'kg', image: 'resources/shrimp.jpg' },
   { id: 'kote', name: 'Kote Fish', price: 4000, unit: 'kg', image: 'resources/kote.jpg' },
   { id: 'catfish', name: 'Catfish', price: 5000, unit: 'kg', image: 'resources/catfish.jpg' },
-  { id: 'sausages', name: 'Sausages', price: null, unit: 'pack', image: 'resources/sausages.jpg' },
+  { id: 'sausages', name: 'Sausages', price: 2800, unit: 'pack', image: 'resources/sausages.jpg' },
   { id: 'eggs', name: 'Egg Crate', price: null, unit: 'crate', image: 'resources/egg crate.jpg' },
-  { id: 'pork', name: 'Pork', price: null, unit: 'kg', image: 'resources/pork.jpg' }
+  { id: 'pork', name: 'Pork', price: 5000, unit: 'kg', image: 'resources/pork.jpg' },
+  { id: 'palm-oil-75cl', name: 'Palm Oil 75cl', price: 2800, unit: 'bottle', image: 'resources/palm-oil-75cl.png' },
+  { id: 'palm-oil-5l', name: 'Palm Oil 5L', price: 5500, unit: 'bottle', image: 'resources/palm-oil-5l.png' }
 ];

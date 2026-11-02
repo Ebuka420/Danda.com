@@ -1362,15 +1362,39 @@ body { font-family: Inter, "Segoe UI", Arial, sans-serif; color: var(--text-dark
 .checkout-form input, .checkout-form textarea, .checkout-form select { border-radius: 8px; }
 .quantity-control { border-radius: 8px; }
 .shop-status { border-radius: 12px; color: var(--danda-red); }
+.palm-oil-page { padding-top: 42px; padding-bottom: 72px; }
+.palm-oil-page > h1 { margin: 8px 0 10px; font: 400 clamp(2.2rem, 5vw, 3.2rem) Georgia, "Times New Roman", serif; }
+.palm-oil-page .section-label { margin: 30px 0 8px; }
+.palm-oil-back { color: var(--danda-red); font-size: .9rem; }
+.palm-oil-grid { margin-top: 26px; }
+.palm-oil-product { height: 100%; overflow: hidden; }
+.palm-oil-product .product-img-box { height: auto; min-height: 260px; aspect-ratio: 4 / 3; display: grid; place-items: center; background: #faf7f5; padding: 24px; }
+.palm-oil-product .product-img-box img { width: 100%; height: 100%; max-height: 300px; object-fit: contain; }
+.palm-oil-image-fallback { min-height: 210px; width: 100%; display: grid; place-items: center; border: 1px dashed #c7a5ad; border-radius: 12px; background: #fbf5f6; color: var(--danda-red); font: 500 1.2rem Georgia, "Times New Roman", serif; }
+.palm-oil-product .product-content h2 { font-size: 1.2rem; }
+.palm-oil-product .product-content p { color: var(--text-muted); font-size: .9rem; }
+.palm-oil-footer { display: grid; grid-template-columns: 1fr auto; gap: 14px 28px; align-items: center; }
+.palm-oil-footer h2 { color: #fff; font: 400 1.5rem Georgia, "Times New Roman", serif; }
+.palm-oil-footer p { margin: 0; color: #f1dce0; font-size: .86rem; }
+.palm-oil-footer .palm-oil-contact { grid-column: 1 / -1; border-top: 1px solid #ffffff25; padding-top: 16px; }
+.palm-oil-footer a:not(.cta-button) { color: #fff; text-decoration: underline; }
+.cart-image-fallback { width: 70px; height: 70px; display: grid; place-items: center; border-radius: 10px; background: #fbf5f6; color: var(--danda-red); font-size: .7rem; text-align: center; padding: 4px; }
 @media (max-width: 767px) {
   #Poster { min-height: 460px; }
   .hero-overlay { background: linear-gradient(90deg, rgba(43,13,23,.87), rgba(43,13,23,.56)); }
+}
+@media (max-width: 575px) {
+  .palm-oil-page { padding-top: 30px; padding-bottom: 50px; }
+  .palm-oil-product .product-img-box { min-height: 220px; }
+  .palm-oil-footer { grid-template-columns: 1fr; }
+  .palm-oil-footer .palm-oil-contact { grid-column: auto; }
 }
 [hidden] { display: none !important; }
 @media (max-width: 991px) { .cart-layout { grid-template-columns: 1fr; } .order-summary { max-width: 500px; } }
 @media (max-width: 575px) {
   .cart-row { grid-template-columns: 52px minmax(0, 1fr) 105px; gap: 12px; }
   .cart-row > img { width: 52px; height: 52px; }
+  .cart-image-fallback { width: 52px; height: 52px; }
   .line-total { grid-column: 2 / -1; text-align: left; }
   .checkout-form { grid-template-columns: 1fr; }
   .cart-page { padding-top: 32px; }

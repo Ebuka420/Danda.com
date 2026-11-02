@@ -57,6 +57,12 @@
       const product = byId(item.id);
       const row = document.createElement('article'); row.className = 'cart-row'; row.dataset.itemId = product.id;
       const image = document.createElement('img'); image.src = product.image; image.alt = product.name;
+      image.addEventListener('error', () => {
+        const fallback = document.createElement('span');
+        fallback.className = 'cart-image-fallback';
+        fallback.textContent = product.name.startsWith('Palm Oil') ? product.name.replace('Palm Oil ', '') : 'Product';
+        image.replaceWith(fallback);
+      }, { once: true });
       const details = document.createElement('div'); details.className = 'cart-details';
       const title = document.createElement('h2'); title.textContent = product.name;
       const price = document.createElement('p'); price.textContent = product.price === null ? 'Price to be confirmed' : `${money(product.price)} / ${product.unit}`;
@@ -84,7 +90,8 @@
     const nav = document.querySelector('.navbar-nav');
     if (nav) { const item = document.createElement('li'); item.className = 'nav-item'; item.innerHTML = '<a class="nav-link cart-nav" href="./Cart.html">Cart <span data-cart-count class="cart-badge">0</span></a>'; nav.append(item); }
     document.querySelectorAll('.product-card').forEach(card => {
-      const name = card.querySelector('h4')?.textContent.trim().toLowerCase();
+      if (card.hasAttribute('data-category-hub')) return;
+      const name = card.querySelector('h4, h2')?.textContent.trim().toLowerCase();
       const product = products.find(entry => entry.name.toLowerCase() === name); if (!product) return;
       const oldPrice = card.querySelector(':scope > p'); if (oldPrice) oldPrice.textContent = product.price === null ? 'Price to be confirmed' : `${money(product.price)} / ${product.unit}`;
       const shop = document.createElement('div'); shop.className = 'product-shop';
