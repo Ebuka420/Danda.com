@@ -56,13 +56,21 @@
     cart.forEach(item => {
       const product = byId(item.id);
       const row = document.createElement('article'); row.className = 'cart-row'; row.dataset.itemId = product.id;
-      const image = document.createElement('img'); image.src = product.image; image.alt = product.name;
-      image.addEventListener('error', () => {
+      let image;
+      if (product.image) {
+        image = document.createElement('img'); image.src = product.image; image.alt = product.name;
+        image.addEventListener('error', () => {
+          const fallback = document.createElement('span');
+          fallback.className = 'cart-image-fallback';
+          fallback.textContent = product.name.startsWith('Palm Oil') ? product.name.replace('Palm Oil ', '') : 'Product';
+          image.replaceWith(fallback);
+        }, { once: true });
+      } else {
         const fallback = document.createElement('span');
         fallback.className = 'cart-image-fallback';
         fallback.textContent = product.name.startsWith('Palm Oil') ? product.name.replace('Palm Oil ', '') : 'Product';
-        image.replaceWith(fallback);
-      }, { once: true });
+        image = fallback;
+      }
       const details = document.createElement('div'); details.className = 'cart-details';
       const title = document.createElement('h2'); title.textContent = product.name;
       const price = document.createElement('p'); price.textContent = product.price === null ? 'Price to be confirmed' : `${money(product.price)} / ${product.unit}`;
