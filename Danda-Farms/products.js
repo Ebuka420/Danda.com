@@ -16,5 +16,5 @@ window.DANDA_PRODUCTS = [
   { id: 'eggs', name: 'Egg Crate', price: null, unit: 'crate', image: 'resources/egg crate.jpg' },
   { id: 'pork', name: 'Pork', price: 5000, unit: 'kg', image: 'resources/pork.jpg' },
   { id: 'palm-oil-75cl', name: 'Palm Oil 75cl', price: 2800, unit: 'bottle', image: 'resources/palm-oil-75cl.png' },
-  { id: 'palm-oil-5l', name: 'Palm Oil 5L', price: 5500, unit: 'bottle', image: 'resources/palm-oil-5l.png' }
+  { id: 'palm-oil-5l', name: 'Palm Oil 5L', price: 5500, unit: 'bottle', image: 'resources/images.jpg' }
 ];
